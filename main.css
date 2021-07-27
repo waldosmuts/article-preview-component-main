@@ -1,7 +1,219 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    border-radius: 15px;
+    margin: 50px 0;
+    box-shadow: 1px 38px 67px -5px rgba(158,175,194,1);
+    min-height: 200px;
+}
+
+.image-container {
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    width: 330px;
+    flex-shrink: 0;
+}
+
+.article-image {
+    height: 200px;
+    width: 330px;
+    object-fit: cover;
+    object-position: 0 -15px;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-body {
+    margin: 36px 36px 0.5em 36px;
+}
+
+.card h2 {
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(217, 19%, 35%);
+    margin-top: 0;
+}
+
+.card p {
+    font-weight: 500;
+    color: hsl(214, 17%, 51%);
+}
+
+.article-footer {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 36px 15px 36px;
+    align-items: center;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 1em;
+}
+
+.footer-info h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    margin: 0;
+}
+
+.footer-info span {
+    color: hsl(212, 23%, 69%);
+}
+
+.share-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.share-button svg {
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.social-share-button {
+    background-color: hsl(214, 17%, 51%);
+    fill: hsl(210, 46%, 95%);
+}
+
+.footer-share-button {
+    flex-shrink: 0;
+    background-color: hsl(210, 46%, 95%);
+    fill: hsl(214, 17%, 51%);
+}
+
+.footer-share-button:hover {
+    background-color: hsl(214, 17%, 51%);
+    fill: hsl(210, 46%, 95%);
+}
+
+.share-menu {
+    display: none;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    background-color: hsl(217, 19%, 35%);
+    padding: 0 36px;
+}
+
+.share-menu span {
+    font-weight: 500;
+    color: hsl(212, 23%, 69%);
+    letter-spacing: 0.5em;
+}
+
+.social-links {
+    margin-left: -25px;
+}
+
+.social-links a {
+    margin: 0 7px;
+}
+
 .attribution { 
-    font-size: 11px; text-align: center; 
+    width: 100%;
+    padding-bottom: 2em;
+    font-size: 11px; 
+    text-align: center;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 800px) {
+    .card {
+        flex-direction: row;
+        width: 710px;
+        height: 285px;
+        padding-right: 20px;
+    }
+
+    .article-image {
+        height: 300px;
+        width: 300px;
+        vertical-align: bottom;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .image-container {
+        overflow: hidden;
+        border-radius: 15px 0 0 15px;
+        width: 300px;
+        flex-shrink: 0;
+    }
+}
+
+.button-active {
+    background-color: hsl(217, 19%, 35%);
+    fill: hsl(210, 46%, 95%);
+}
+
+.social-menu-desktop {
+    position: relative;
+    display: flex;
+    left: 230px;
+    top: -70px;
+    width: 180px;
+    height: 50px;
+    margin-bottom: -50px;
+    border-radius: 10px;
+}
+
+.social-menu-desktop .social-links {
+    margin-right: -80px;
+}
+
+.triangle {
+    position: relative;
+    bottom: -30px;
+    left: -75px;
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid hsl(217, 19%, 35%);
 }
