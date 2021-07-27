@@ -8,6 +8,7 @@ body {
     font-family: 'Manrope', sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: hsl(210, 46%, 95%);
 }
 
 .wrapper {
